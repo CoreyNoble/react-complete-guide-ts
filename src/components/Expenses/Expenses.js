@@ -9,8 +9,6 @@ const Expenses = ({ items }) => {
 
   const filterChangeHandler = (selectedYear) => {
     setFilteredYear(selectedYear)
-
-    console.log('Set new year: ', selectedYear)
   }
 
   const expenseItems = items.map((expense) => (
@@ -20,7 +18,9 @@ const Expenses = ({ items }) => {
       amount={expense.amount}
       date={expense.date}
     />
-  ));
+  )).filter((expense) => {
+    return expense.props.date.getFullYear() === parseInt(filteredYear)
+  });
 
   return (
     <>
