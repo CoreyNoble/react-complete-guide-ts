@@ -1,7 +1,5 @@
-import React from 'react';
-
-import CourseGoalItem from '../CourseGoalItem/CourseGoalItem';
-import './CourseGoalList.css';
+import CourseGoalItem from '../CourseGoalItem/CourseGoalItem'
+import './CourseGoalList.css'
 
 const CourseGoalList = props => {
   return (
@@ -19,4 +17,4 @@ const CourseGoalList = props => {
   );
 };
 
-export default CourseGoalList;
+export default CourseGoalList
