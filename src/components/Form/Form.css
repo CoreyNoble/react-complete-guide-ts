@@ -1,0 +1,32 @@
+button {
+  color: #fff;
+  background-color: purple;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  font-weight: bold;
+  transition: all 0.05s ease;
+}
+
+button:hover {
+  cursor: pointer;
+  border: 2px solid purple;
+  color: #000;
+  background-color: plum;
+}
+
+input, label {
+  display: block;
+  text-align: left;
+  width: 100%;
+}
+
+input {
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  padding: 0.25rem;
+}
+
+label {
+  font-weight: bold;
+  line-height: 2;
+}
